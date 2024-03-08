@@ -1,4 +1,6 @@
 docker run \
     -v $(pwd):/work \
-    -w /work -it -p 3000:3000 \
+    -w /work -it\ 
+    -p 3000:3000 \
+    -p 6006:6006
     node:20.11.0 $@
